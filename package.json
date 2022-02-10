@@ -3,6 +3,7 @@
   "displayName": "vscode-plugin-emoji",
   "description": "a convenient tool for writing Emoji",
   "version": "0.0.1",
+  "repository": "https://github.com/awesomeWDB/vscode-plugin-emoji.git",
   "engines": {
     "vscode": "^1.64.0"
   },

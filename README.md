@@ -1,6 +1,6 @@
 # vscode-plugin-emoji README
 
-This is the README for your extension "vscode-plugin-emoji". After writing up a brief description, we recommend including the following sections.
+这是一个可以在vscode中方便插入emoji表情的插件，支持一些关键字和中文检索。
 
 ## example
 

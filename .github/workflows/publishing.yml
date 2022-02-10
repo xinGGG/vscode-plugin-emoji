@@ -22,5 +22,5 @@ jobs:
         with:
           python-version: '3.10'
       - run: npm install
-      - run: npm install -g vsce
+      - run: npm install -g vsce yarn
       - run: vsce package
