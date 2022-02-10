@@ -18,8 +18,5 @@ jobs:
         with:
           node-version: 10.x
       - run: npm install
-      # - run: xvfb-run -a npm test
-      #   if: runner.os == 'Linux'
-      # - run: npm test
-      #   if: runner.os != 'Linux'
+      - run: npm install -g vsce
       - run: npm test
