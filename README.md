@@ -1,6 +1,6 @@
 # vscode-plugin-emoji README
 
-这是一个可以在vscode中方便插入emoji表情的插件，支持一些关键字和中文检索。
+这是一个可以在 vscode 中方便插入 emoji 表情的插件，支持一些关键字和中文检索。
 
 ## example
 
@@ -11,6 +11,46 @@
 选择需要的 emoji，会自动进行替换：
 
 ![替换](./2.jpg)
+
+## 数据来源
+
+保存 emoji 的相关数据到 plugin 本地中，会不定期更新相关数据
+
+## 自定义
+
+如果想要自己定义一些 emoji 数据，请按照以下格式(可以缺省，image 必填)，对插件进行配置：
+
+```ts
+{
+  image: string,
+  groupName?: string,
+  subGroupName?: string,
+  nameZh?: string,
+  nameEn?: string,
+  collections?: string[],
+  detail?: {
+    unicode_version?: string,
+    unicode_code?: string,
+    code?: string,
+    keywords?: string[]
+  }
+}
+
+```
+
+示例：
+
+```json
+"emojiConfig.emojis": [
+  {
+    "image": "🤛",
+    "nameZh": "朝左的拳头测试关键名字",
+    "detail": {
+      "code": ":test2_code:",
+    }
+  }
+]
+```
 
 ## Features
 

@@ -13,14 +13,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      # 修改了node版本：成功
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 14.18.3
+      # 安装python成功
       - name: Set up Python 3.10
         uses: actions/setup-python@v2
         with:
           python-version: '3.10'
       - run: npm install
       - run: npm install -g vsce yarn
-      - run: vsce package
+      - run: npm run deploy
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}

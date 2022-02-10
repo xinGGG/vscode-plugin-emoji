@@ -2,8 +2,15 @@
   "name": "vscode-plugin-emoji",
   "displayName": "vscode-plugin-emoji",
   "description": "a convenient tool for writing Emoji",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "awesomeWDB",
   "repository": "https://github.com/awesomeWDB/vscode-plugin-emoji.git",
+  "icon": "media/icon-blue-150x150.png",
+  "keywords": [
+    "emoji",
+    "insert",
+    "keywords"
+  ],
   "engines": {
     "vscode": "^1.64.0"
   },
@@ -11,16 +18,11 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-plugin-emoji.helloWorld",
     "*"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "vscode-plugin-emoji.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "vscode-plugin-emoji.replace_after_insert",
         "title": "replace after insert"
