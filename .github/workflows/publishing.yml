@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      # - name: Set up Python 3.10
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: '3.10'
       - run: npm install
       - run: npm install -g vsce
-      - run: npm test
+      - run: vsce package
