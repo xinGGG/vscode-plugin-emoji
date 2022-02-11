@@ -2,7 +2,7 @@
   "name": "vscode-plugin-emoji",
   "displayName": "vscode-plugin-emoji",
   "description": "a convenient tool for writing Emoji",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "awesomeWDB",
   "repository": "https://github.com/awesomeWDB/vscode-plugin-emoji.git",
   "icon": "media/icon-blue-150x150.png",
